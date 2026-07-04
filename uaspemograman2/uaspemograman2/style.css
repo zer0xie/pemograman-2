@@ -1,0 +1,140 @@
+* { box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f2f4f7;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+header {
+    background: #0b3d62;
+    color: #fff;
+    padding: 18px 30px 10px;
+    text-align: center;
+}
+header h1 { margin: 0; font-size: 22px; letter-spacing: 1px; }
+header h3 { margin: 2px 0 0; font-weight: 400; font-size: 14px; opacity: .85; }
+.programmer { font-size: 12px; opacity: .7; margin: 6px 0 0; }
+
+.navbar {
+    display: flex;
+    gap: 6px;
+    background: #124a75;
+    padding: 10px 30px;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.navbar a:hover { background: rgba(255,255,255,.15); }
+.navbar a.active { background: #ffb703; color: #222; }
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px 40px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 22px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+.card h2 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #0b3d62;
+    border-bottom: 2px solid #eef1f4;
+    padding-bottom: 8px;
+}
+
+form .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+form label {
+    width: 170px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+form input[type=text],
+form input[type=date],
+form input[type=number],
+form select {
+    flex: 1;
+    min-width: 200px;
+    padding: 7px 10px;
+    border: 1px solid #ccd3da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+form input[readonly] { background: #f0f0f0; color: #777; }
+
+.checkbox-group { display: flex; gap: 18px; align-items: center; flex: 1; }
+.checkbox-group label { width: auto; font-weight: 400; display: flex; gap: 6px; align-items: center; }
+
+.btn {
+    background: #0b3d62;
+    color: #fff;
+    border: none;
+    padding: 9px 22px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 6px;
+}
+.btn:hover { background: #124a75; }
+.btn.secondary { background: #6c757d; }
+.btn.small { padding: 4px 12px; font-size: 12px; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+th, td {
+    border: 1px solid #dfe3e8;
+    padding: 8px 10px;
+    text-align: center;
+}
+th { background: #eef3f7; color: #0b3d62; }
+tr:nth-child(even) td { background: #fafbfc; }
+
+.action a { margin: 0 4px; text-decoration: none; font-weight: 600; }
+.action a.edit { color: #0b6cb8; }
+.action a.hapus { color: #d9384d; }
+.action a.proses { color: #1b8a4a; }
+
+.badge { padding: 3px 9px; border-radius: 12px; font-size: 12px; font-weight: 700; }
+.badge.ok { background: #d4f4dd; color: #1b8a4a; }
+.badge.tidak { background: #fbdadf; color: #d9384d; }
+
+.info-box {
+    background: #fff8e1;
+    border-left: 4px solid #ffb703;
+    padding: 10px 14px;
+    font-size: 12.5px;
+    margin-bottom: 14px;
+    border-radius: 4px;
+}
+
+.pendapatan {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0b3d62;
+    margin-top: 14px;
+}
+.pendapatan span { color: #1b8a4a; }
+
+.empty { color: #999; font-style: italic; }
